@@ -1,0 +1,10 @@
+2nd semester project @CBS 
+
+Recycling system for Roskilde Festival following three tier architecture 
+
+
+***** INSTALLATION INSTRUCTIONS *****
+1. Download the SQL file and run it to create the database with default values 
+2. Import the project and run the code using GWT in your editor
+
+(Check the CONNECTION details in the ServerImpl class and ensure that the credentials match with your SQL user) 
