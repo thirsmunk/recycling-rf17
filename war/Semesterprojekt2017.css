@@ -1,0 +1,162 @@
+/** Add css rules here for your application. */
+body {
+	background-color: white;
+}
+
+.north {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-style: solid;
+	border-bottom-color: orange;
+}
+
+.west {
+	border-style:solid;
+	border-color:white;
+	border-right-color:orange;
+	background-color: white;
+}
+
+.btn {
+	height: 32px;
+	width: 200px;
+	border: #696969;
+	border-radius: 5px;
+	font-size: 18px;
+	cursor: pointer;
+	color: orange;
+	margin-bottom: 5px;
+	align-items: center;
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	background-color: #efefef;
+}
+
+.btnLogin{
+	height: 30px;
+	width: 200px;
+	border: #696969;
+	border-radius: 5px;
+	font-size: 18px;
+	cursor: pointer;
+	color: grey;
+	margin-top: 10px;
+	align-items: center;
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	background-color: #efefef;
+}
+
+.btn:hover {
+	background-color: grey;
+	color: orange;
+}
+
+.btnLogin:hover{
+	background-color:grey;
+	color:orange;
+}
+
+.btn:focus{
+	background-color:grey;
+}
+
+
+
+.title {
+	font-size: 32px;
+	font-weight: normal;
+	color: orange;
+	font-family: 'Oswald', sans-serif;
+	text-align:center;
+	margin:0px 0px 15px 0px;
+	
+}
+
+.textBox {
+	height: 30px;
+	width: 200px;
+	margin: 0 0 10px 0;
+	border: none;
+	border-radius: 5px;
+	background-color:#efefef;
+}
+
+.textBoxLogin {
+	color:grey;
+	height: 30px;
+	width: 200px;
+	margin: 0 0 10px 0;
+	border: none;
+	border-radius: 5px;	
+	background-color:#efefef;
+	
+}
+
+.outerPanel {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	justify-content: center;
+	margin-top: 10%;
+}
+
+.outerPanelLogin{
+	display: flex;
+	height: 100%;
+	width: 100%;
+	justify-content: center;
+	background-image:url("https://media.giphy.com/media/26xBt3PXFYqlqQIa4/giphy.gif");
+	background-repeat: no-repeat;
+	background-size:100%;
+}
+
+.loginBox{
+	margin-top:200px;
+	padding: 10px;
+	background:white;
+	border-radius:15px;
+}
+
+.text {
+	color: orange;
+	font-size: 24px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: normal;
+	}
+	
+.img{
+	width:100%;
+}
+
+
+.cellTable {
+	width:100%;
+  	border: none;
+  	margin: 20px 0px 0px 0px;
+	font-family: 'Oswald', sans-serif;
+	text-align: left;
+	color: orange;
+	font-size:18px;
+}
+
+.actioncell button{
+	height: 28px;
+	width: 100px;
+	border: #696969;
+	border-radius: 5px;
+	font-size: 18px;
+	cursor: pointer;
+	color: orange;
+	align-items: center;
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	background-color: #efefef;
+}
+
+.actioncell button:hover{
+	background-color:grey;
+}
+
+

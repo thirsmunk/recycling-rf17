@@ -1,0 +1,53 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<ui:style>
+	.overskrift{
+	font-size:42px;
+	font-family: 'Oswald', sans-serif;
+	color:white;
+	
+	}
+	</ui:style>
+
+	<!-- Global style element page applied to this HTMLPanel -->
+	<g:HTMLPanel styleName="outerPanelLogin">
+
+		<!-- This panels content goes in here -->
+
+		<g:VerticalPanel horizontalAlignment="ALIGN_CENTER">
+		
+			<g:Label styleName="{style.overskrift}">Welcome to RF17-Pantsystem</g:Label>
+
+		<g:VerticalPanel styleName="loginBox" horizontalAlignment="ALIGN_CENTER">
+			<!-- Title -->
+		
+
+			<!-- Username -->
+			<g:HorizontalPanel>
+				<g:TextBox styleName="textBoxLogin" ui:field="usernameTextBox"
+					alignment="CENTER" />
+			</g:HorizontalPanel>
+
+			<!-- Password -->
+			<g:HorizontalPanel>
+				<g:PasswordTextBox styleName="textBoxLogin" ui:field="passwordTextBox"
+					alignment="CENTER" />
+			</g:HorizontalPanel>
+
+
+			<!-- Button Log-In and Create User -->
+			<g:VerticalPanel>
+				<g:Button styleName="btnLogin" text="Login" ui:field="loginBtn" />
+				<g:Button styleName="btnLogin" text="Create User" ui:field="createUserBtn" />
+			</g:VerticalPanel>
+
+		</g:VerticalPanel>
+		
+		</g:VerticalPanel>
+			
+		
+
+	</g:HTMLPanel>
+</ui:UiBinder> 

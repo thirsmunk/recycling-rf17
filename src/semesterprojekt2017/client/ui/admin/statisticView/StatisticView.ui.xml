@@ -1,0 +1,39 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	.statsPanel {
+		display: flex;
+		height: 100%;
+		width: 100%;
+		margin: 20px 0px 0px 20px;
+	}
+	
+	.statsText {
+		color: orange;
+		font-size: 18px;
+		font-family: 'Oswald', sans-serif;
+		font-weight: normal;
+		margin: 0px 5px 15px 0px;
+	}
+	</ui:style>
+	<g:HTMLPanel>
+
+		<g:VerticalPanel styleName="{style.statsPanel}">
+
+			<g:Label styleName="title"
+				text="Statistics about users and collected pant" />
+
+			<g:Label styleName="{style.statsText}" text="Number of total users: " />
+			<g:NumberLabel styleName="{style.statsText}" ui:field="numberOfUsersLbl" />
+
+			<g:Label styleName="{style.statsText}" text="Total collected pant in kroner: " />
+			<g:NumberLabel styleName="{style.statsText}" ui:field="totalCollectedLbl" />
+
+			<g:Label styleName="{style.statsText}" text="Average collected pant per user: " />
+			<g:NumberLabel styleName="{style.statsText}" ui:field="averageCollectedLbl" />
+
+		</g:VerticalPanel>
+
+	</g:HTMLPanel>
+</ui:UiBinder> 

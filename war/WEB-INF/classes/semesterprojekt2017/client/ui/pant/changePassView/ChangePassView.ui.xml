@@ -1,0 +1,26 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	
+	</ui:style>
+	<g:HTMLPanel>
+		<g:VerticalPanel styleName="outerPanel"
+			horizontalAlignment="ALIGN_CENTER">
+
+			<!-- Old password here -->
+			<g:Label styleName="text" text="Old password" />
+			<g:PasswordTextBox styleName="textBox" ui:field="oldPasswordTextBox"
+				alignment="CENTER" />
+
+			<!-- New password here -->
+			<g:Label styleName="text" text="New password" />
+			<g:PasswordTextBox styleName="textBox" ui:field="newPasswordTextBox"
+				alignment="CENTER" />
+
+			<!-- Confirmation button -->
+			<g:Button styleName="btn" text="Change password" ui:field="changePasswordBtn" />
+
+		</g:VerticalPanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

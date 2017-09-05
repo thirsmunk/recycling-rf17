@@ -1,0 +1,16 @@
+semesterprojekt2017.client
+semesterprojekt2017.client.logic
+semesterprojekt2017.client.rpc
+semesterprojekt2017.client.ui
+semesterprojekt2017.client.ui.admin.adminMainView
+semesterprojekt2017.client.ui.admin.changePassView
+semesterprojekt2017.client.ui.admin.pantViewAdmin
+semesterprojekt2017.client.ui.admin.pantViewAdmin.singlePantViewAdmin
+semesterprojekt2017.client.ui.admin.statisticView
+semesterprojekt2017.client.ui.create
+semesterprojekt2017.client.ui.login
+semesterprojekt2017.client.ui.pant.changePassView
+semesterprojekt2017.client.ui.pant.pantMainView
+semesterprojekt2017.client.ui.pant.pantView
+semesterprojekt2017.server
+semesterprojekt2017.shared

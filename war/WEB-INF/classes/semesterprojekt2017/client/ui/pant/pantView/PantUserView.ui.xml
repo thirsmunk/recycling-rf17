@@ -1,0 +1,80 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" 
+	xmlns:c="urn:import:com.google.gwt.user.cellview.client">
+	<!-- The import above is important, otherwise CellTable isn't recognized -->
+	<ui:style>
+	.profilePanel {
+		display: flex;
+		height: 100%;
+		width: 100%;
+		margin: 20px 0px 0px 20px;
+	}
+	
+	.profileText {
+		color: orange;
+		font-size: 18px;
+		font-family: 'Oswald', sans-serif;
+		font-weight: normal;
+		margin: 0px 5px 15px 0px;
+	}
+	
+	.infoText {
+		color: orange;
+		font-size: 28px;
+		font-family: 'Oswald', sans-serif;
+		font-weight: normal;
+		margin-bottom: 25px;
+	}
+	</ui:style>
+
+	<g:HTMLPanel styleName="{style.profilePanel}">
+
+
+		<g:VerticalPanel>
+
+			<g:HorizontalPanel>
+				<g:Label styleName="{style.infoText}" text="Total collected pant in kroner: " />
+				<g:NumberLabel styleName="{style.infoText}" ui:field="totalPantCollectedLbl" />
+			</g:HorizontalPanel>
+
+			<g:Label styleName="text" text="Submit new collected pant: " />
+
+			<!-- Enter panttype and number -->
+			<g:HorizontalPanel>
+				<g:VerticalPanel>
+					<g:Label styleName="{style.profileText}"
+						text="Please enter the type of pant: A, B or C:" />
+					<g:Label styleName="{style.profileText}"
+						text="Please enter the amount of cans/bottles collected: " />
+				</g:VerticalPanel>
+				<g:VerticalPanel>
+					<g:HorizontalPanel>
+						<g:RadioButton styleName="{style.profileText}"
+							ui:field="aRadioBtn" name="radioBtn" text="Pant A" />
+						<g:RadioButton styleName="{style.profileText}"
+							ui:field="bRadioBtn" name="radioBtn" text="Pant B" />
+						<g:RadioButton styleName="{style.profileText}"
+							ui:field="cRadioBtn" name="radioBtn" text="Pant C" />
+					</g:HorizontalPanel>
+
+					<g:IntegerBox styleName="textBox" ui:field="pantValueBox"
+						alignment="CENTER" />
+				</g:VerticalPanel>
+			</g:HorizontalPanel>
+
+			<!-- Button for submitting -->
+			<g:Button styleName="btn" text="Submit" ui:field="addPantBtn" />
+
+			<!-- Celltable and Simplepager for displaying data from database -->
+			<g:VerticalPanel horizontalAlignment="ALIGN_CENTER">
+				<c:CellTable ui:field="pantViewTable" styleName="cellTable" />
+				<c:SimplePager ui:field="simplePager" location="CENTER" />
+			</g:VerticalPanel>
+
+		</g:VerticalPanel>
+
+
+
+	</g:HTMLPanel>
+</ui:UiBinder> 

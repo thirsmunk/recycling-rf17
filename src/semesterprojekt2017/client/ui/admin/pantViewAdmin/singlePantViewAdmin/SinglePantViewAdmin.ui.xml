@@ -1,0 +1,30 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" 
+	xmlns:c="urn:import:com.google.gwt.user.cellview.client">
+	<ui:style>
+	.infoText {
+		color: orange;
+		font-size: 28px;
+		font-family: 'Oswald', sans-serif;
+		font-weight: normal;
+		margin-bottom: 25px;
+	}
+	</ui:style>
+	<g:HTMLPanel>
+
+		<g:HorizontalPanel>
+			<g:Label styleName="{style.infoText}" text="Total collected pant in kroner: " />
+			<g:NumberLabel styleName="{style.infoText}" ui:field="totalPantCollectedLbl" />
+		</g:HorizontalPanel>
+
+		<!-- Celltable and Simplepager for displaying data from database -->
+		<g:VerticalPanel horizontalAlignment="ALIGN_CENTER">
+			<c:CellTable ui:field="singlePantViewTable" styleName="cellTable" />
+			<c:SimplePager ui:field="simplePager" location="CENTER" />
+		</g:VerticalPanel>
+
+		<g:Button text="Back" ui:field="singlePantBackBtn" styleName="btnLogin" />
+
+	</g:HTMLPanel>
+</ui:UiBinder> 

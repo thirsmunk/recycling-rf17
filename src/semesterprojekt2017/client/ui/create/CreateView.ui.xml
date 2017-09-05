@@ -1,0 +1,54 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	
+	<ui:style>
+	.overskrift{
+		font-size:42px;
+		font-family: 'Oswald', sans-serif;
+		color:white;	
+	}
+	</ui:style>
+
+	<g:HTMLPanel styleName="outerPanelLogin">
+	
+	
+		<g:VerticalPanel>
+		
+			<g:Label styleName="{style.overskrift}">Create a user</g:Label>		
+
+		<g:VerticalPanel styleName="loginBox" horizontalAlignment="ALIGN_CENTER">
+		
+
+			<!--  Fullname -->
+			<g:HorizontalPanel>
+				<g:TextBox styleName="textBoxLogin" ui:field="createFullname"
+				alignment="CENTER" />
+			</g:HorizontalPanel>
+			
+			<!-- Username -->
+			<g:HorizontalPanel>
+				<g:TextBox styleName="textBoxLogin" ui:field="createUsername"
+					alignment="CENTER" />
+			</g:HorizontalPanel>
+
+			<!-- Password -->
+			<g:HorizontalPanel>
+				<g:PasswordTextBox styleName="textBoxLogin" ui:field="createUserPass"
+					alignment="CENTER" />
+			</g:HorizontalPanel>
+
+			<!-- Button Create User and Cancel -->
+			<g:VerticalPanel>
+				<g:Button styleName="btnLogin" ui:field="userCreateOK" text="OK" />
+				
+				<g:Button styleName="btnLogin" ui:field="userCreateCancel" text="Cancel" />
+			</g:VerticalPanel>
+		</g:VerticalPanel>
+		
+		</g:VerticalPanel>
+	
+		
+
+	</g:HTMLPanel>
+</ui:UiBinder> 
